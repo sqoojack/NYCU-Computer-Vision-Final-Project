@@ -73,7 +73,7 @@ pip install -r requirements.txt
   Alternatively, you can generate example videos demonstrated on the project website by running:
 
   ```
-  python inference.py --input_dir <input_path> --output_dir <output_path>
+  python inference_try.py --input_dir <input_path> --output_dir <output_path>
   ```
   An example command that produces the same result as the notebook is ```CUDA_VISIBLE_DEVICES=0 python inference.py --input_dir ./examples/111 --output_dir ./output```. For convenience, we have provided a shell script, where it generates all the examples by running ```sh ./inference.sh```.
   
