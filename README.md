@@ -73,9 +73,10 @@ pip install -r requirements.txt
   Alternatively, you can generate example videos demonstrated on the project website by running:
 
   ```
-  python inference_try.py --input_dir <input_path> --output_dir <output_path>
+  Original Paper: python inference.py --input_dir <input_path> --output_dir <output_path>
+  Ours modify: python inference_try.py --input_dir <input_path> --output_dir <output_path>
   ```
-  An example command that produces the same result as the notebook is ```CUDA_VISIBLE_DEVICES=0 python inference.py --input_dir ./examples/111 --output_dir ./output```. For convenience, we have provided a shell script, where it generates all the examples by running ```sh ./inference.sh```.
+  An example command that produces the same result as the notebook is ```CUDA_VISIBLE_DEVICES=0 python inference_try.py --input_dir ./examples/111 --output_dir ./output```. For convenience, we have provided a shell script, where it generates all the examples by running ```sh ./inference.sh```.
   
   For the input format of examples, please refer to ```read_condition(input_dir, config)``` in ```inference.py``` for more details. Briefly, each example folder contains the first frame image (```img.png```) and trajectory conditions (```traj.npy```), where the trajectory conditions are encoded by the top-left/bottom-right coordinates of each bounding box + positions of its center coordinate across frames. 
 
